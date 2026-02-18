@@ -1365,7 +1365,7 @@ footer {
 
 .who-we-are {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 .values-section {
@@ -1445,11 +1445,11 @@ footer {
 
 .process-subtitle {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 300;
     line-height: 1.3;
     margin-bottom: 30px;
-    font-family: var(--font-body);
-    color: var(--text-dark);
+    font-family: var(--font-heading);
+    color: #000;
 }
 
 .process-step.active {
@@ -1505,10 +1505,10 @@ footer {
 .lets-connect-card {
     background: #fff;
     color: #000;
-    padding: 80px 40px;
+    padding: 40px 40px;
     border-radius: 0px;
     text-align: center;
-    max-width: 800px;
+    max-width: 600px;
     margin: 100px auto 0;
     position: relative;
     overflow: hidden;
@@ -1599,7 +1599,7 @@ footer {
 
 .step-content h4 {
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 300;
     color: #000;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -1632,7 +1632,7 @@ footer {
 }
 
 .founder-section {
-    padding: 60px 0 10px 0;
+    padding: 60px 0 60px 0;
     background-color: #fff;
 }
 
@@ -1652,10 +1652,10 @@ footer {
 
 .founder-image {
     position: absolute;
-    top: 0;
+    top: -60px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% + 60px);
     object-fit: cover;
     border-radius: 2px;
     box-shadow: 20px 0 0 #f5f5f5;
@@ -1669,17 +1669,17 @@ footer {
 
 .founder-name {
     font-size: 2rem;
-    margin-top: 0;
+    margin-top: -60px;
     margin-bottom: 5px;
     text-align: left;
     font-family: 'Playfair Display', serif;
     color: #8B0000;
 }
 
-.founder-role {
+.founder-content .founder-role {
     font-size: 1.25rem;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-bottom: 25px;
     color: #8B0000;
     font-family: var(--font-heading);
     text-align: left;
@@ -1924,6 +1924,8 @@ footer {
 
     .founder-image {
         box-shadow: none;
+        top: 0;
+        height: 100%;
         /* Remove horizontal shadow on mobile */
     }
 
