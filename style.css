@@ -1649,10 +1649,10 @@ footer {
 
 .founder-image {
     position: absolute;
-    top: -80px;
+    top: -40px;
     left: 0;
     width: 100%;
-    height: calc(100% + 80px);
+    height: calc(100% + 40px);
     object-fit: cover;
     border-radius: 2px;
     box-shadow: 20px 0 0 #e4dbdb;
@@ -1666,7 +1666,7 @@ footer {
 
 .founder-name {
     font-size: 2rem;
-    margin-top: -70px;
+    margin-top: -30px;
     margin-bottom: 5px;
     text-align: left;
     font-family: 'Playfair Display', serif;
