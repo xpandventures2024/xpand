@@ -1033,6 +1033,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .logo {
+        height: 65px !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 55px !important;
+        max-width: 180px !important;
+        width: auto !important;
+    }
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
