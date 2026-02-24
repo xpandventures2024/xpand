@@ -528,11 +528,11 @@ header .container {
 
 @keyframes scrollLeftToRight {
     from {
-        transform: translateX(-50%);
+        transform: translate3d(-50%, 0, 0);
     }
 
     to {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -712,6 +712,8 @@ header .container {
     width: max-content;
     animation: scrollLeftToRight 40s linear infinite;
     align-items: center;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 
@@ -1051,6 +1053,34 @@ footer {
 
     .brands-title {
         font-size: 2.5rem;
+    }
+
+    .brand-logo-grid img {
+        max-height: 120px;
+        width: 150px;
+    }
+
+    .brand-logo-grid img[src*="mahindra_truck.png"] {
+        max-height: 100px;
+        max-width: 200px;
+        margin-right: 20px;
+    }
+
+    .brand-logo-grid img[src*="dighe_kulkarni.png"],
+    .brand-logo-grid img[src*="aykyam.png"],
+    .brand-logo-grid img[src*="aston_hostel.png"],
+    .brand-logo-grid img[src*="bitsom.png"],
+    .brand-logo-grid img[src*="aadyam_handwoven.png"] {
+        max-height: 80px;
+    }
+
+    .brand-logo-grid img[src*="united_service_institution.png"],
+    .brand-logo-grid img[src*="tgfa.png"] {
+        max-height: 100px;
+    }
+
+    .brand-track {
+        gap: 15px;
     }
 }
 
