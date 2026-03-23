@@ -193,15 +193,15 @@ if (expertiseCards.length > 0) {
             if (window.innerWidth <= 992) {
                 const isActive = card.classList.contains('active-pop');
                 
-                // Close all other expertise cards
+                // First close all cards
                 expertiseCards.forEach(c => c.classList.remove('active-pop'));
                 
-                // Toggle current card
+                // If it wasn't active, open it. (If it WAS active, it stays closed now)
                 if (!isActive) {
                     card.classList.add('active-pop');
                 }
                 
-                // Prevent event bubbling
+                // Prevent event bubbling to document
                 e.stopPropagation();
             }
         });

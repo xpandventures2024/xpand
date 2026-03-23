@@ -1123,6 +1123,13 @@ footer {
         box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5) !important;
         z-index: 100 !important;
     }
+
+    /* Force reset for non-active cards on mobile to prevent sticky hover scale */
+    .service-card:not(.active-pop) {
+        transform: scale(1) translateY(0) !important;
+        box-shadow: none !important;
+        z-index: 1 !important;
+    }
 }
 
 
