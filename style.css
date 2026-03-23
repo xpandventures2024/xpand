@@ -1130,15 +1130,6 @@ footer {
         box-shadow: none !important;
         z-index: 1 !important;
     }
-
-    /* Keep the track moving on mobile even if someone is interacting */
-    .service-track {
-        animation-play-state: running !important;
-    }
-    
-    .service-track:hover {
-        animation-play-state: running !important;
-    }
 }
 
 

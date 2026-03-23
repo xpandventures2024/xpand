@@ -187,6 +187,8 @@ if (serviceRows.length > 0) {
 
 // Core Expertise / Creative Work Card Interaction (Mobile)
 const expertiseCards = document.querySelectorAll('.service-card');
+const serviceTrack = document.querySelector('.service-track');
+
 if (expertiseCards.length > 0) {
     expertiseCards.forEach(card => {
         card.addEventListener('click', (e) => {
@@ -196,9 +198,12 @@ if (expertiseCards.length > 0) {
                 // First close all cards
                 expertiseCards.forEach(c => c.classList.remove('active-pop'));
                 
-                // If it wasn't active, open it. (If it WAS active, it stays closed now)
+                // Toggle current card
                 if (!isActive) {
                     card.classList.add('active-pop');
+                    if (serviceTrack) serviceTrack.style.animationPlayState = 'paused';
+                } else {
+                    if (serviceTrack) serviceTrack.style.animationPlayState = 'running';
                 }
                 
                 // Prevent event bubbling to document
@@ -207,9 +212,12 @@ if (expertiseCards.length > 0) {
         });
     });
     
-    // Close card when clicking anywhere else
+    // Close card and resume animation when clicking anywhere else
     document.addEventListener('click', () => {
         expertiseCards.forEach(c => c.classList.remove('active-pop'));
+        if (serviceTrack && window.innerWidth <= 992) {
+            serviceTrack.style.animationPlayState = 'running';
+        }
     });
 }
 
