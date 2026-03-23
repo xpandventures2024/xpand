@@ -973,7 +973,8 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 40px;
-        padding-top: 40px;
+        padding-top: 0;
+        transform: none;
     }
 
     .hero-content {
@@ -1005,6 +1006,16 @@ footer {
 
     .hero-content .btn-connect {
         margin: 0 auto;
+    }
+
+    .hero {
+        min-height: 80vh !important;
+        padding-top: 100px !important;
+        padding-bottom: 60px !important;
+        background: #000 url('mobileherobanner.jpeg') no-repeat center bottom/cover !important;
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
     }
 
     .about-heading {
@@ -1101,10 +1112,13 @@ footer {
     }
 
     .hero {
-        min-height: 60vh !important;
-        padding-top: 40px !important;
+        min-height: 80vh !important;
+        padding-top: 100px !important;
         padding-bottom: 60px !important;
-        background-position: 80% center !important;
+        background: #000 url('mobileherobanner.jpeg') no-repeat center bottom/cover !important;
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
     }
 
     .service-hero,
