@@ -133,36 +133,57 @@ window.addEventListener('scroll', () => {
 
 
 
-    // Services Page Interaction - Mouse Follow Image & Dropdown Toggle
-    const serviceRows = document.querySelectorAll('.service-row');
+}); // Close the scroll event listener properly
 
-    if (serviceRows.length > 0) {
-        serviceRows.forEach(row => {
-            const image = row.querySelector('.service-hover-img');
+// Services Page Interaction - Mouse Follow Image & Dropdown Toggle
+const serviceRows = document.querySelectorAll('.service-row');
 
-            // Hover based Dropdown Toggle & Image Reveal
-            row.addEventListener('mouseenter', () => {
-                image.classList.add('active');
+if (serviceRows.length > 0) {
+    serviceRows.forEach(row => {
+        const image = row.querySelector('.service-hover-img');
+
+        // Hover based Dropdown Toggle & Image Reveal (Desktop)
+        row.addEventListener('mouseenter', () => {
+            if (window.innerWidth > 992) {
+                if (image) image.classList.add('active');
                 row.classList.add('active'); // Expand dropdown
-            });
+            }
+        });
 
-            row.addEventListener('mouseleave', () => {
-                image.classList.remove('active');
+        row.addEventListener('mouseleave', () => {
+            if (window.innerWidth > 992) {
+                if (image) image.classList.remove('active');
                 row.classList.remove('active'); // Collapse dropdown
-            });
+            }
+        });
 
-            row.addEventListener('mousemove', (e) => {
-                // Get mouse position
+        row.addEventListener('mousemove', (e) => {
+            if (window.innerWidth > 992 && image) {
                 const x = e.clientX;
                 const y = e.clientY;
-
-                // Center the image on the cursor
                 image.style.left = `${x}px`;
                 image.style.top = `${y}px`;
-            });
+            }
         });
-    }
-});
+
+        // Click based toggle (Mobile)
+        row.addEventListener('click', () => {
+            if (window.innerWidth <= 992) {
+                const isActive = row.classList.contains('active');
+                
+                // Close all rows
+                serviceRows.forEach(r => {
+                    r.classList.remove('active');
+                });
+                
+                // If it wasn't active before, open it
+                if (!isActive) {
+                    row.classList.add('active');
+                }
+            }
+        });
+    });
+}
 
 // Timeline Scroll Animation
 window.addEventListener('scroll', () => {

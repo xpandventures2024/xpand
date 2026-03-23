@@ -1092,9 +1092,10 @@ footer {
 
     .service-hero,
     .about-hero {
-        min-height: 30vh !important;
-        padding-top: 60px !important;
-        background-size: 100% 100%, contain !important;
+        min-height: auto !important;
+        height: 25vh !important;
+        padding-top: 80px !important;
+        background-size: 100% 100%, cover !important;
         background-position: 0 0, center center !important;
         background-repeat: no-repeat !important;
     }
@@ -1111,7 +1112,7 @@ footer {
     min-height: 60vh;
     padding-top: 120px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/Our-services-new.webp') !important;
-    background-position: 0 0, center -10px !important;
+    background-position: 0 0, center !important;
     background-repeat: no-repeat !important;
     background-size: 100% 100%, cover !important;
     display: flex;
@@ -1276,21 +1277,33 @@ footer {
 }
 
 .service-row.active {
-    background-color: #fff;
-    /* Keep white background when active, or dark? User asked to keep effects. Hover is dark. */
-    /* If I click, does it stay dark? Let's assume active state keeps it expanded. 
-       If I want to read the text, dark bg with light text might be hard if styles aren't perfect.
-       Let's keep the hover effect separate. 
-       Actually, if it's active, it should probably override the hover effect or be compatible.
-       Let's stick to the hover effect logic: background darkens on hover. 
-       If I click, it opens. If I move mouse away, it might go back to white?
-       The dropdown is inside. If I move away, the row is still there. 
-       Let's see. */
+    background-color: #1a1a1a;
 }
 
-/* Ensure text colors are correct in dropdown when row is hovered (dark bg) */
-.service-row:hover .service-dropdown-list li {
+.service-row.active .service-content h2,
+.service-row.active .service-content p {
+    color: white;
+}
+
+.service-row.active .service-dropdown-list li {
     color: #e0e0e0;
+}
+
+/* Disable sticky hover issues strictly on mobile devices */
+@media (max-width: 992px) {
+    .service-row:not(.active) {
+        background-color: #fff !important;
+    }
+    .service-row:not(.active) .service-content h2 {
+        color: #1a1a1a !important;
+    }
+    .service-row:not(.active) .service-content p {
+        color: #666 !important;
+    }
+    .service-row:not(.active) .service-arrow {
+        color: #1a1a1a !important;
+        transform: rotate(0deg) !important;
+    }
 }
 
 /* Image Reveal Effect */
@@ -1368,7 +1381,7 @@ footer {
     min-height: 60vh;
     padding-top: 120px;
     background-image: linear-gradient(rgba(1, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/new aout us banner .webp');
-    background-position: 0 0, center -10px;
+    background-position: 0 0, center;
     background-repeat: no-repeat;
     background-size: 100% 100%, cover;
     color: white;
