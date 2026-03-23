@@ -1116,6 +1116,13 @@ footer {
         background-position: 0 0, center center !important;
         background-repeat: no-repeat !important;
     }
+
+    /* Mobile specific pop effect for Expertise Cards */
+    .service-card.active-pop {
+        transform: scale(1.1) translateY(-10px) !important;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5) !important;
+        z-index: 100 !important;
+    }
 }
 
 

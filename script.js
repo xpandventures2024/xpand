@@ -185,6 +185,34 @@ if (serviceRows.length > 0) {
     });
 }
 
+// Core Expertise / Creative Work Card Interaction (Mobile)
+const expertiseCards = document.querySelectorAll('.service-card');
+if (expertiseCards.length > 0) {
+    expertiseCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992) {
+                const isActive = card.classList.contains('active-pop');
+                
+                // Close all other expertise cards
+                expertiseCards.forEach(c => c.classList.remove('active-pop'));
+                
+                // Toggle current card
+                if (!isActive) {
+                    card.classList.add('active-pop');
+                }
+                
+                // Prevent event bubbling
+                e.stopPropagation();
+            }
+        });
+    });
+    
+    // Close card when clicking anywhere else
+    document.addEventListener('click', () => {
+        expertiseCards.forEach(c => c.classList.remove('active-pop'));
+    });
+}
+
 // Timeline Scroll Animation
 window.addEventListener('scroll', () => {
     const timelineContainer = document.querySelector('.process-steps');
