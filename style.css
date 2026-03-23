@@ -1082,6 +1082,22 @@ footer {
     .brand-track {
         gap: 15px;
     }
+
+    .hero {
+        min-height: 60vh !important;
+        padding-top: 40px !important;
+        padding-bottom: 60px !important;
+        background-position: center !important;
+    }
+
+    .service-hero,
+    .about-hero {
+        min-height: 30vh !important;
+        padding-top: 60px !important;
+        background-size: 100% 100%, contain !important;
+        background-position: 0 0, center center !important;
+        background-repeat: no-repeat !important;
+    }
 }
 
 
@@ -1094,7 +1110,7 @@ footer {
 .service-hero {
     min-height: 60vh;
     padding-top: 120px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/Our-services-new.png') !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/Our-services-new.webp') !important;
     background-position: 0 0, center -10px !important;
     background-repeat: no-repeat !important;
     background-size: 100% 100%, cover !important;
@@ -1351,7 +1367,7 @@ footer {
 .about-hero {
     min-height: 60vh;
     padding-top: 120px;
-    background-image: linear-gradient(rgba(1, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/new aout us banner .png');
+    background-image: linear-gradient(rgba(1, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/new aout us banner .webp');
     background-position: 0 0, center -10px;
     background-repeat: no-repeat;
     background-size: 100% 100%, cover;
