@@ -1124,11 +1124,20 @@ footer {
         z-index: 100 !important;
     }
 
-    /* Force reset for non-active cards on mobile to prevent sticky hover scale */
+    /* Force non-active cards to reset properly on mobile */
     .service-card:not(.active-pop) {
         transform: scale(1) translateY(0) !important;
         box-shadow: none !important;
         z-index: 1 !important;
+    }
+
+    /* Keep the track moving on mobile even if someone is interacting */
+    .service-track {
+        animation-play-state: running !important;
+    }
+    
+    .service-track:hover {
+        animation-play-state: running !important;
     }
 }
 
