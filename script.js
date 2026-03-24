@@ -142,18 +142,18 @@ if (serviceRows.length > 0) {
     serviceRows.forEach(row => {
         const image = row.querySelector('.service-hover-img');
 
-        // Hover based Dropdown Toggle & Image Reveal (Desktop)
+        // Hover based Toggle & Image Reveal (Desktop Only)
         row.addEventListener('mouseenter', () => {
             if (window.innerWidth > 992) {
                 if (image) image.classList.add('active');
-                row.classList.add('active'); // Expand dropdown
+                row.classList.add('active'); // Expand dropdown smoothly
             }
         });
 
         row.addEventListener('mouseleave', () => {
             if (window.innerWidth > 992) {
                 if (image) image.classList.remove('active');
-                row.classList.remove('active'); // Collapse dropdown
+                row.classList.remove('active'); // Collapse dropdown smoothly
             }
         });
 
@@ -166,12 +166,12 @@ if (serviceRows.length > 0) {
             }
         });
 
-        // Click based toggle (Mobile)
+        // Click based Accordion Toggle (Mobile Only)
         row.addEventListener('click', () => {
             if (window.innerWidth <= 992) {
                 const isActive = row.classList.contains('active');
                 
-                // Close all rows
+                // Close all rows for smooth accordion feel on mobile
                 serviceRows.forEach(r => {
                     r.classList.remove('active');
                 });
