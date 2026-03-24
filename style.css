@@ -749,6 +749,10 @@ header .container {
     max-height: 150px;
 }
 
+.brand-logo-grid img[src*="the_d_wave.png"] {
+    max-height: 80px;
+}
+
 .brand-logo-grid img[src*="mahindra_truck.png"] {
     max-height: 250px;
     max-width: 450px;
