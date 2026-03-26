@@ -295,3 +295,31 @@ window.addEventListener('scroll', () => {
         }
     }
 });
+
+// WhatsApp Float Footer Hiding
+document.addEventListener('DOMContentLoaded', () => {
+    const whatsappFloat = document.querySelector('.whatsapp-float');
+    const footerElement = document.querySelector('footer');
+    
+    if (footerElement && whatsappFloat) {
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            // The footer is revealed when we scroll to the very bottom
+            // Hide WhatsApp float when we are within the footer area (minus a tiny buffer)
+            if (documentHeight - scrollPosition < footerElement.offsetHeight - 50) {
+                whatsappFloat.classList.add('whatsapp-hidden');
+            } else {
+                whatsappFloat.classList.remove('whatsapp-hidden');
+            }
+        });
+        
+        // Initial check just in case
+        const initialScroll = window.scrollY + window.innerHeight;
+        const initialDocHeight = document.documentElement.scrollHeight;
+        if (initialDocHeight - initialScroll < footerElement.offsetHeight - 50) {
+            whatsappFloat.classList.add('whatsapp-hidden');
+        }
+    }
+});
