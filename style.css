@@ -1728,7 +1728,7 @@ footer {
     border-color: #8B0000;
     color: #8B0000;
     box-shadow: 0 0 15px rgba(139, 0, 0, 0.4);
-    transform: scale(1.1);
+    transform: translateX(-50%) scale(1.1);
     background: #fff;
 }
 
@@ -1908,7 +1908,7 @@ footer {
 
     .process-steps .step-num {
         position: absolute !important;
-        left: 10px !important;
+        left: 30px !important;
         /* Precise alignment on timeline */
         top: 10px !important;
         margin: 0 !important;
