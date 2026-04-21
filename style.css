@@ -747,6 +747,7 @@ header .container {
 .brand-logo-grid img[src*="aykyam.png"],
 .brand-logo-grid img[src*="aston_hostel.png"],
 .brand-logo-grid img[src*="bitsom.png"],
+.brand-logo-grid img[src*="hrx.png"],
 .brand-logo-grid img[src*="aadyam_handwoven.png"] {
     max-height: 150px;
 }
@@ -781,6 +782,7 @@ header .container {
 .brand-logo-grid img[src*="tgfa.png"],
 .brand-logo-grid img[src*="oxford_india_forum.png"],
 .brand-logo-grid img[src*="the_d_wave.png"],
+.brand-logo-grid img[src*="hrx.png"],
 .brand-logo-grid img[src*="aykyam.png"] {
     margin: 0;
     width: auto;
@@ -1125,6 +1127,7 @@ footer {
     .brand-logo-grid img[src*="aston_hostel.png"],
     .brand-logo-grid img[src*="bitsom.png"],
     .brand-logo-grid img[src*="aadyam_handwoven.png"],
+    .brand-logo-grid img[src*="hrx.png"],
     .brand-logo-grid img[src*="the_d_wave.png"] {
         max-height: 60px;
         width: auto !important;
