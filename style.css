@@ -754,7 +754,8 @@ header .container {
 }
 
 .brand-logo-grid img[src*="hrx.png"],
-.brand-logo-grid img[src*="HRX logo.png"] {
+.brand-logo-grid img[src*="HRX logo.png"],
+.brand-logo-grid img[src*="hrx new logo.png"] {
     max-height: 240px;
     position: relative;
     top: 20px;
@@ -792,6 +793,7 @@ header .container {
 .brand-logo-grid img[src*="the_d_wave.png"],
 .brand-logo-grid img[src*="hrx.png"],
 .brand-logo-grid img[src*="HRX logo.png"],
+.brand-logo-grid img[src*="hrx new logo.png"],
 .brand-logo-grid img[src*="rare rabbit"],
 .brand-logo-grid img[src*="logo (3).png"],
 .brand-logo-grid img[src*="aykyam.png"] {
