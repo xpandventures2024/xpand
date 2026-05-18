@@ -323,3 +323,68 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+// Contact Form Submission Handling
+const contactForm = document.getElementById('contactForm');
+const formResult = document.getElementById('form-result');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.innerHTML;
+        submitButton.innerHTML = "SENDING...";
+        submitButton.disabled = true;
+        
+        const formData = new FormData(contactForm);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        
+        if (formResult) {
+            formResult.innerHTML = "Please wait...";
+            formResult.style.color = "#666";
+        }
+
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                if (formResult) {
+                    formResult.innerHTML = "Message sent successfully! We'll get back to you soon.";
+                    formResult.style.color = "green";
+                }
+                contactForm.reset();
+            } else {
+                console.log(response);
+                if (formResult) {
+                    formResult.innerHTML = json.message || "Something went wrong.";
+                    formResult.style.color = "red";
+                }
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            if (formResult) {
+                formResult.innerHTML = "Something went wrong! Please try again.";
+                formResult.style.color = "red";
+            }
+        })
+        .finally(() => {
+            submitButton.innerHTML = originalButtonText;
+            submitButton.disabled = false;
+            if (formResult) {
+                setTimeout(() => {
+                    formResult.innerHTML = "";
+                }, 5000);
+            }
+        });
+    });
+}
