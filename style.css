@@ -749,9 +749,12 @@ header .container {
 .brand-logo-grid img[src*="bitsom.png"],
 .brand-logo-grid img[src*="rare rabbit"],
 .brand-logo-grid img[src*="logo (3).png"],
-.brand-logo-grid img[src*="Force motor"],
 .brand-logo-grid img[src*="aadyam_handwoven.png"] {
     max-height: 150px;
+}
+
+.brand-logo-grid img[src*="Force motor"] {
+    max-height: 220px;
 }
 
 .brand-logo-grid img[src*="hrx.png"],
@@ -1143,9 +1146,13 @@ footer {
     .brand-logo-grid img[src*="bitsom.png"],
     .brand-logo-grid img[src*="aadyam_handwoven.png"],
     .brand-logo-grid img[src*="hrx.png"],
-    .brand-logo-grid img[src*="Force motor"],
     .brand-logo-grid img[src*="the_d_wave.png"] {
         max-height: 60px;
+        width: auto !important;
+    }
+
+    .brand-logo-grid img[src*="Force motor"] {
+        max-height: 90px;
         width: auto !important;
     }
 
