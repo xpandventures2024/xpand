@@ -1130,6 +1130,7 @@ footer {
     /* brands-title handled in 992px mq */
 
     .brand-logo-grid img {
+        height: auto !important;
         max-height: 120px !important;
         width: auto !important;
         position: static !important;
@@ -1139,38 +1140,27 @@ footer {
         object-fit: contain !important;
     }
 
-    .brand-logo-grid img[src*="dighe_kulkarni.png"],
-    .brand-logo-grid img[src*="aykyam.png"],
-    .brand-logo-grid img[src*="aston_hostel.png"],
-    .brand-logo-grid img[src*="bitsom.png"],
-    .brand-logo-grid img[src*="rare rabbit"],
-    .brand-logo-grid img[src*="logo (3).png"],
-    .brand-logo-grid img[src*="aadyam_handwoven.png"] {
-        max-height: 60px !important;
-    }
-
-    .brand-logo-grid img[src*="Force motor"] {
-        max-height: 88px !important;
-    }
-
+    .brand-logo-grid img[src*="bitsom.png"] { height: 60px !important; }
+    .brand-logo-grid img[src*="clove.png"] { height: 210px !important; }
+    .brand-logo-grid img[src*="dighe_kulkarni.png"] { height: 80px !important; }
+    .brand-logo-grid img[src*="intangles.png"] { height: 50px !important; }
+    .brand-logo-grid img[src*="mahindra_const.png"] { height: 300px !important; }
+    .brand-logo-grid img[src*="mahindra_truck.png"] { height: 110px !important; }
+    .brand-logo-grid img[src*="sotc.png"] { height: 46px !important; }
+    .brand-logo-grid img[src*="tgfa.png"] { height: 86px !important; }
+    .brand-logo-grid img[src*="aadyam_handwoven.png"] { height: 46px !important; }
+    .brand-logo-grid img[src*="trizella.png"] { height: 84px !important; }
+    .brand-logo-grid img[src*="united_service_institution.png"] { height: 71px !important; }
+    .brand-logo-grid img[src*="oxford_india_forum.png"] { height: 90px !important; }
+    .brand-logo-grid img[src*="aykyam.png"] { height: 52px !important; }
+    .brand-logo-grid img[src*="the_d_wave.png"] { height: 46px !important; }
     .brand-logo-grid img[src*="hrx.png"],
     .brand-logo-grid img[src*="HRX logo.png"],
-    .brand-logo-grid img[src*="hrx new logo.png"] {
-        max-height: 96px !important;
-    }
-
-    .brand-logo-grid img[src*="the_d_wave.png"] {
-        max-height: 32px !important;
-    }
-
-    .brand-logo-grid img[src*="mahindra_truck.png"] {
-        max-height: 100px !important;
-    }
-
-    .brand-logo-grid img[src*="united_service_institution.png"],
-    .brand-logo-grid img[src*="tgfa.png"] {
-        max-height: 100px !important;
-    }
+    .brand-logo-grid img[src*="hrx new logo.png"] { height: 104px !important; }
+    .brand-logo-grid img[src*="Force motor"] { height: 76px !important; }
+    .brand-logo-grid img[src*="aston_hostel.png"] { height: 51px !important; }
+    .brand-logo-grid img[src*="rare rabbit"] { height: 72px !important; }
+    .brand-logo-grid img[src*="logo (3).png"] { height: 53px !important; }
 
     .brand-track {
         gap: 15px;
