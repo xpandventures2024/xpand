@@ -807,6 +807,7 @@ header .container {
 }
 
 .logo-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -814,12 +815,16 @@ header .container {
 }
 
 .logo-text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 14px;
     font-weight: bold;
     color: #333;
-    margin-top: 5px;
     text-align: center;
     font-family: 'Outfit', sans-serif;
+    white-space: nowrap;
 }
 
 
