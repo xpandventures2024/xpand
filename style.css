@@ -1145,30 +1145,30 @@ footer {
         object-fit: contain !important;
     }
 
-    .brand-logo-grid img[src*="bitsom.png"] { height: 60px !important; }
-    .brand-logo-grid img[src*="clove.png"] { height: 210px !important; }
-    .brand-logo-grid img[src*="dighe_kulkarni.png"] { height: 80px !important; }
-    .brand-logo-grid img[src*="intangles.png"] { height: 50px !important; }
-    .brand-logo-grid img[src*="mahindra_const.png"] { height: 300px !important; }
-    .brand-logo-grid img[src*="mahindra_truck.png"] { height: 110px !important; }
-    .brand-logo-grid img[src*="sotc.png"] { height: 46px !important; }
-    .brand-logo-grid img[src*="tgfa.png"] { height: 86px !important; }
-    .brand-logo-grid img[src*="aadyam_handwoven.png"] { height: 46px !important; }
-    .brand-logo-grid img[src*="trizella.png"] { height: 84px !important; }
-    .brand-logo-grid img[src*="united_service_institution.png"] { height: 71px !important; }
-    .brand-logo-grid img[src*="oxford_india_forum.png"] { height: 90px !important; }
-    .brand-logo-grid img[src*="aykyam.png"] { height: 52px !important; }
-    .brand-logo-grid img[src*="the_d_wave.png"] { height: 46px !important; }
+    .brand-logo-grid img[src*="bitsom.png"] { height: 99px !important; }
+    .brand-logo-grid img[src*="clove.png"] { height: 350px !important; }
+    .brand-logo-grid img[src*="dighe_kulkarni.png"] { height: 134px !important; }
+    .brand-logo-grid img[src*="intangles.png"] { height: 83px !important; }
+    .brand-logo-grid img[src*="mahindra_const.png"] { height: 500px !important; }
+    .brand-logo-grid img[src*="mahindra_truck.png"] { height: 183px !important; }
+    .brand-logo-grid img[src*="sotc.png"] { height: 76px !important; }
+    .brand-logo-grid img[src*="tgfa.png"] { height: 144px !important; }
+    .brand-logo-grid img[src*="aadyam_handwoven.png"] { height: 77px !important; }
+    .brand-logo-grid img[src*="trizella.png"] { height: 139px !important; }
+    .brand-logo-grid img[src*="united_service_institution.png"] { height: 119px !important; }
+    .brand-logo-grid img[src*="oxford_india_forum.png"] { height: 151px !important; }
+    .brand-logo-grid img[src*="aykyam.png"] { height: 87px !important; }
+    .brand-logo-grid img[src*="the_d_wave.png"] { height: 77px !important; }
     .brand-logo-grid img[src*="hrx.png"],
     .brand-logo-grid img[src*="HRX logo.png"],
-    .brand-logo-grid img[src*="hrx new logo.png"] { height: 104px !important; }
-    .brand-logo-grid img[src*="Force motor"] { height: 76px !important; }
-    .brand-logo-grid img[src*="aston_hostel.png"] { height: 51px !important; }
-    .brand-logo-grid img[src*="rare rabbit"] { height: 72px !important; }
-    .brand-logo-grid img[src*="logo (3).png"] { height: 53px !important; }
+    .brand-logo-grid img[src*="hrx new logo.png"] { height: 173px !important; }
+    .brand-logo-grid img[src*="Force motor"] { height: 126px !important; }
+    .brand-logo-grid img[src*="aston_hostel.png"] { height: 85px !important; }
+    .brand-logo-grid img[src*="rare rabbit"] { height: 120px !important; }
+    .brand-logo-grid img[src*="logo (3).png"] { height: 88px !important; }
 
     .brand-track {
-        gap: 15px;
+        gap: 70px !important;
     }
 
     .hero {
