@@ -795,7 +795,6 @@ header .container {
     margin-left: -30px;
 }
 
-.brand-logo-grid img[src*="bitsom.png"],
 .brand-logo-grid img[src*="united_service_institution.png"],
 .brand-logo-grid img[src*="tgfa.png"],
 .brand-logo-grid img[src*="oxford_india_forum.png"],
@@ -803,11 +802,17 @@ header .container {
 .brand-logo-grid img[src*="hrx.png"],
 .brand-logo-grid img[src*="HRX logo.png"],
 .brand-logo-grid img[src*="hrx new logo.png"],
-.brand-logo-grid img[src*="rare rabbit"],
-.brand-logo-grid img[src*="logo (3).png"],
 .brand-logo-grid img[src*="Force motor"],
 .brand-logo-grid img[src*="aykyam.png"] {
     margin: 0;
+    width: auto;
+}
+
+.brand-logo-grid img[src*="bitsom.png"],
+.brand-logo-grid img[src*="logo (3).png"],
+.brand-logo-grid img[src*="Tommy_Hilfiger_Logo"],
+.brand-logo-grid .logo-item-spaced {
+    margin: 0 12px;
     width: auto;
 }
 
@@ -817,6 +822,10 @@ header .container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.logo-item img {
+    width: auto;
 }
 
 .logo-text {
@@ -830,6 +839,10 @@ header .container {
     text-align: center;
     font-family: 'Outfit', sans-serif;
     white-space: nowrap;
+}
+
+.usi-text {
+    margin-top: -15px;
 }
 
 
