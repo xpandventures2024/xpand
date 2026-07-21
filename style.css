@@ -769,6 +769,11 @@ header .container {
     max-height: 80px;
 }
 
+.brand-logo-grid img[src*="Tommy_Hilfiger_Logo"] {
+    max-height: 120px;
+    width: auto;
+}
+
 .brand-logo-grid img[src*="mahindra_truck.png"] {
     max-height: 250px;
     max-width: 450px;
